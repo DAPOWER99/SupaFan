@@ -7,8 +7,8 @@
 ---
 
 <img align="right" src="logo.svg" alt="SupaFAN Logo" width="320" />
-**SupaFAN** is a highly advanced, automated command-line OSINT (Open Source Intelligence) and data curation pipeline designed to extract, analyze, and download YouTube channel data at scale. By unifying the YouTube Data API v3, `yt-dlp`, `static-ffmpeg`, and the OpenRouter AI API, SupaFAN allows researchers, data scientists, and developers to scrape rich datasets from YouTube channels and automatically generate intelligence briefings.
 
+**SupaFAN** is a highly advanced, automated command-line OSINT (Open Source Intelligence) and data curation pipeline designed to extract, analyze, and download YouTube channel data at scale. By unifying the YouTube Data API v3, `yt-dlp`, `static-ffmpeg`, and the OpenRouter AI API, SupaFAN allows researchers, data scientists, and developers to scrape rich datasets from YouTube channels and automatically generate intelligence briefings.
 ---
 
 ## 🚀 Core Features
