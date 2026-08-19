@@ -3,11 +3,11 @@
 ![SupaFAN Banner](https://img.shields.io/badge/SupaFAN-YouTube_OSINT-ff0000?style=for-the-badge\&logo=youtube)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge\&logo=python)
 ![AI Ready](https://img.shields.io/badge/AI_Training-Ready-success?style=for-the-badge)
-<p align="right"><img src="logo.svg" alt="SupaFAN Logo" width="100"></p>
 
 **SupaFAN** is a highly advanced, automated command-line OSINT (Open Source Intelligence) and data curation pipeline designed to extract, analyze, and download YouTube channel data at scale.
 
 By unifying the YouTube Data API v3, `yt-dlp`, `static-ffmpeg`, and the OpenRouter AI API, SupaFAN allows researchers, data scientists, and developers to scrape rich datasets from YouTube channels and automatically generate intelligence briefings.
+<p align="right"><img src="logo.svg" alt="SupaFAN Logo" width="320"></p>
 
 ---
 
