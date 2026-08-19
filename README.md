@@ -5,10 +5,10 @@
 ![AI Ready](https://img.shields.io/badge/AI_Training-Ready-success?style=for-the-badge)
 
 ---
-
-<p align="right">
-  <img src="logo.svg" alt="SupaFAN Logo" width="320" align="right" hspace="15"/>
-</p>
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <h1 style="margin:0;">SupaFAN - YouTube Intelligence & OSINT Pipeline</h1>
+  <img src="logo.svg" alt="SupaFAN Logo" width="320" />
+</div>
 
 **SupaFAN** is a highly advanced, automated command-line OSINT (Open Source Intelligence) and data curation pipeline designed to extract, analyze, and download YouTube channel data at scale. By unifying the YouTube Data API v3, `yt-dlp`, `static-ffmpeg`, and the OpenRouter AI API, SupaFAN allows researchers, data scientists, and developers to scrape rich datasets from YouTube channels and automatically generate intelligence briefings.
 
@@ -181,34 +181,6 @@ The evaluation represents a **manual report-level accuracy assessment**, rather 
 ## 📝 License
 
 Made With 💖 By **DAPOWER99**.
-
----
-
-## 🔧 Troubleshooting & Tips
-
-### Common Issues
-
-| Issue | Solution |
-|-------|----------|
-| `403 Forbidden` on downloads | Add `cookies.txt` file to root directory |
-| Module not found errors | Ensure virtual environment is activated and all dependencies are installed |
-| Video downloads fail | Check internet connection and YouTube API quota |
-| Audio not playing in VS Code | Use VLC or another dedicated media player |
-
-### File Structure Overview
-```
-SupaFAN/
-├── main.py
-├── requirements.txt
-├── .env
-├── cookies.txt (optional)
-├── output/
-│   ├── videos/
-│   ├── metadata/
-│   └── reports/
-└── src/
-```
-
 ---
 
 **Happy OSINT Researching! 🔍**
