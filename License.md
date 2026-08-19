@@ -459,28 +459,4 @@ You should also get your employer (if you work as a programmer) or school, if an
 
 ---
 
-## Practical Recommendations for SupaFAN
-
-1. **README Warning:** Place a clear warning in your repository that PhoenixSL is a custom source-available license and not OSI-approved. Consider using a badge or prominent notice at the top of the README.
-
-2. **Third-Party Disclaimer:** Include a prominent disclaimer that the license does not grant permission to violate YouTube's ToS, API terms, or any other third-party platform terms. This is particularly important given SupaFAN's interaction with external platforms.
-
-3. **API Compliance:** Ensure the Program itself includes appropriate rate-limiting and compliance mechanisms to avoid unintentional ToS violations. Consider documenting specific API usage guidelines.
-
-4. **License Visibility:** Place the full license text in a `LICENSE` file at the root of the repository. Also include a brief summary in the README.
-
-5. **Third-Party Component Attribution:** Maintain a clear list of Third-Party Components and their respective licenses, ideally in a `THIRD-PARTY-LICENSES.md` or `NOTICE` file.
-
-6. **Lawyer Review:** Have a qualified legal professional review the final version, especially the termination/revocation, restricted content, and jurisdiction provisions, before relying on it for enforcement.
-
-7. **Official Repository URL:** Specify the Official Project Repository URL in your README and project documentation.
-
-8. **Version Control:** Tag the `1.0` release clearly and maintain a `CHANGELOG.md` to track versions and modifications.
-
-9. **Contributor Guidelines:** If you accept contributions, clearly state in your `CONTRIBUTING.md` that contributors grant you the license specified in §1.6.
-
-10. **Terminology Consistency:** Use "source-available" or "public-source" consistently throughout your documentation. Never refer to PhoenixSL as "open source."
-
----
-
 *PhoenixSL-1.0 — A source-available license that allows commercial use, protects original authorship from plagiarism, prevents misuse for harmful content, and explicitly excludes any patent grant. This license is not affiliated with or endorsed by the Free Software Foundation or the Open Source Initiative. It is not an open source license under the OSI Open Source Definition.*
