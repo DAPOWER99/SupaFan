@@ -43,7 +43,7 @@ The raw comments extracted by the pipeline provide massive, unfiltered corpuses 
 ### 1. Clone & Environment
 Ensure you have Python 3.10+ installed on your system. It is highly recommended to use a virtual environment.
 ```bash
-git clone https://github.com/DAPOWER99/YouTube-OSINT.git
+git clone https://github.com/DAPOWER99/SupaFan.git
 cd SupaFAN
 python -m venv .venv
 
