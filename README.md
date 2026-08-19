@@ -1,8 +1,10 @@
 # SupaFAN - YouTube Intelligence & OSINT Pipeline
 
-![SupaFAN Banner](https://img.shields.io/badge/SupaFAN-YouTube_OSINT-ff0000?style=for-the-badge\&logo=youtube)
-![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge\&logo=python)
+![SupaFAN Banner](https://img.shields.io/badge/SupaFAN-YouTube_OSINT-ff0000?style=for-the-badge&logo=youtube)
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
 ![AI Ready](https://img.shields.io/badge/AI_Training-Ready-success?style=for-the-badge)
+
+---
 
 <p align="right">
   <img src="logo.svg" alt="SupaFAN Logo" width="320" align="right" hspace="15"/>
@@ -14,11 +16,11 @@
 
 ## 🚀 Core Features
 
-* **Smart Target Resolution:** Automatically resolves simple YouTube handles (e.g. `@MarkRober`) or raw channel IDs into their underlying API upload playlists.
-* **Deep Metadata & Comment Mining:** Extracts detailed video statistics such as views, likes, upload dates, descriptions, tags, and user-engagement comments.
-* **AI Intelligence Engine:** Uses the OpenRouter API to analyze scraped metadata and comments, generating audience sentiment, content strategy, and viewer-intent reports.
-* **High-Fidelity AV Downloader:** Uses `yt-dlp` and `static-ffmpeg` to download high-resolution video and high-bitrate audio and merge them into `.mp4` files.
-* **Cookie-Based Authentication:** Supports authenticated browser cookies for resolving YouTube download restrictions when permitted by the user's session and YouTube's access controls.
+- **Smart Target Resolution:** Automatically resolves simple YouTube handles (e.g. `@MarkRober`) or raw channel IDs into their underlying API upload playlists.
+- **Deep Metadata & Comment Mining:** Extracts detailed video statistics such as views, likes, upload dates, descriptions, tags, and user-engagement comments.
+- **AI Intelligence Engine:** Uses the OpenRouter API to analyze scraped metadata and comments, generating audience sentiment, content strategy, and viewer-intent reports.
+- **High-Fidelity AV Downloader:** Uses `yt-dlp` and `static-ffmpeg` to download high-resolution video and high-bitrate audio and merge them into `.mp4` files.
+- **Cookie-Based Authentication:** Supports authenticated browser cookies for resolving YouTube download restrictions when permitted by the user's session and YouTube's access controls.
 
 ---
 
@@ -27,51 +29,43 @@
 SupaFAN was designed to output data that is **primed for Artificial Intelligence and Machine Learning pipelines**. The combination of raw media and structured textual metadata makes it useful for dataset curation.
 
 ### 1. Multimodal Model Training
-
 The downloaded MP4 files can be processed by vision and audio models for tasks such as:
-
-* Video understanding
-* Temporal action localization
-* Frame analysis
-* Speech-to-text processing
-* Audio analysis
+- Video understanding
+- Temporal action localization
+- Frame analysis
+- Speech-to-text processing
+- Audio analysis
 
 ### 2. Large Language Model Fine-Tuning
-
 The `output/` directory generates structured text files containing video concepts, metadata, comments, and AI-generated analysis.
 
 These datasets can be transformed into formats such as JSONL for experimentation with language models.
 
-Potential applications include:
-
-* **Audience Sentiment Prediction**
-* **YouTube Strategy Analysis**
-* **Content Classification**
-* **Topic Detection**
-* **Comment Analysis**
+**Potential applications include:**
+- Audience Sentiment Prediction
+- YouTube Strategy Analysis
+- Content Classification
+- Topic Detection
+- Comment Analysis
 
 ### 3. Retrieval-Augmented Generation (RAG)
-
 SupaFAN's generated intelligence reports can be indexed into a vector database and used with frameworks such as LangChain or LlamaIndex.
 
 This allows an AI system to retrieve information from previously analyzed channels and videos.
 
 ### 4. NLP & Behavioral Analysis
-
 The comments extracted by the pipeline provide large collections of real-world internet language, slang, opinions, and reactions that can be useful for:
-
-* Sentiment analysis
-* Toxicity classification
-* Topic classification
-* Community analysis
-* Linguistic research
+- Sentiment analysis
+- Toxicity classification
+- Topic classification
+- Community analysis
+- Linguistic research
 
 ---
 
 ## ⚙️ Setup & Installation
 
 ### 1. Clone & Environment
-
 Ensure you have Python 3.10+ installed.
 
 ```bash
@@ -87,13 +81,11 @@ source .venv/bin/activate
 ```
 
 ### 2. Install Dependencies
-
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 3. API Keys Configuration
-
 Copy `sample.env` to `.env` and add your API keys:
 
 ```env
@@ -111,7 +103,7 @@ SupaFAN supports authenticated browser cookies for situations where you are auth
 
 Place your exported `cookies.txt` file in the SupaFAN root directory alongside `main.py`, then run SupaFAN again.
 
-**Never commit `cookies.txt` or other authentication credentials to GitHub.**
+> **⚠️ Important:** Never commit `cookies.txt` or other authentication credentials to GitHub.
 
 Add them to `.gitignore`:
 
@@ -127,25 +119,21 @@ cookies.txt
 SupaFAN operates through the terminal.
 
 ### Interactive Mode
-
 ```bash
 python main.py
 ```
 
 ### Targeted Mode & Video Downloading
-
 ```bash
 python main.py -t @MarkRober -d
 ```
 
 ### OSINT Metadata Extraction Only
-
 ```bash
 python main.py -t @MarkRober
 ```
 
 ### Deep Scan
-
 ```bash
 python main.py -t @MarkRober -d --scan-all
 ```
@@ -158,9 +146,9 @@ If you preview downloaded `.mp4` files using Visual Studio Code's built-in media
 
 The downloaded file itself may still contain a valid audio stream.
 
-For reliable playback, open the file with a dedicated media player such as VLC.
+For reliable playback, open the file with a dedicated media player such as **VLC**.
 
-Personally, I choose VLC because Windows Media Player sucks 🥀
+*Personally, I choose VLC because Windows Media Player sucks 🥀*
 
 ---
 
@@ -177,14 +165,10 @@ SupaFAN v2.0 was manually evaluated against **13 YouTube channels**.
 | **Weighted accuracy** | **95.38%** |
 
 ### Calculation
-
 ```text
 (10 × 100 + 1 × 90 + 1 × 80 + 1 × 70) ÷ 13
-
 = 1240 ÷ 13
-
 = 95.384615...
-
 ≈ 95%
 ```
 
@@ -197,3 +181,34 @@ The evaluation represents a **manual report-level accuracy assessment**, rather 
 ## 📝 License
 
 Made With 💖 By **DAPOWER99**.
+
+---
+
+## 🔧 Troubleshooting & Tips
+
+### Common Issues
+
+| Issue | Solution |
+|-------|----------|
+| `403 Forbidden` on downloads | Add `cookies.txt` file to root directory |
+| Module not found errors | Ensure virtual environment is activated and all dependencies are installed |
+| Video downloads fail | Check internet connection and YouTube API quota |
+| Audio not playing in VS Code | Use VLC or another dedicated media player |
+
+### File Structure Overview
+```
+SupaFAN/
+├── main.py
+├── requirements.txt
+├── .env
+├── cookies.txt (optional)
+├── output/
+│   ├── videos/
+│   ├── metadata/
+│   └── reports/
+└── src/
+```
+
+---
+
+**Happy OSINT Researching! 🔍**
