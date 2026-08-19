@@ -1,5 +1,5 @@
 """
-YouTube OSINT & Intelligence Analysis Pipeline v2.0
+YouTube OSINT & Intelligence Analysis Pipeline V1.0
 ====================================================================
 Production-grade intelligence pipeline that captures full channel
 metadata, video telemetry, comment statistics, runs multi-model AI
@@ -49,7 +49,7 @@ except ImportError:
 # 1. CONFIGURATION & CONSTANTS
 # =====================================================================
 
-SCRIPT_VERSION = "2.0.0"
+SCRIPT_VERSION = "1.0.0"
 SCRIPT_CODENAME = "SupaFAN"
 SCRIPT_AUTHOR = "DAPOWER99"
 SCRIPT_REPO = "https://github.com/DAPOWER99/YouTube-OSINT"
