@@ -124,6 +124,7 @@ If you attempt to preview the downloaded `.mp4` files directly inside **Visual S
 This is a known, hardcoded limitation of the VS Code (Electron) architecture, which lacks the proprietary licensing required to decode standard `AAC` audio streams found in high-quality MP4s. 
 
 To watch the video with sound, simply right-click the file in your VS Code explorer, select **Reveal in File Explorer** (or `Shift + Alt + R`), and open it in a standard application like VLC, Windows Media Player, or your web browser.
+personally i choose vlc cuz windows media player sucks 🥀
 
 ---
 
