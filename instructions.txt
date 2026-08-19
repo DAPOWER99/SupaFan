@@ -1,0 +1,70 @@
+======================================================
+           SupaFAN - YouTube OSINT Pipeline
+                 INSTRUCTIONS GUIDE
+======================================================
+
+1. ENVIRONMENT SETUP
+------------------------------------------------------
+This project requires Python 3.10+ and uses a virtual environment.
+To get started:
+1. Open a terminal in the SupaFAN folder.
+2. Activate the virtual environment (if you are on Windows):
+   .venv\Scripts\Activate.ps1
+   (or .venv\Scripts\activate.bat for Command Prompt)
+3. Ensure packages are installed:
+   pip install -r requirements.txt
+
+2. API KEYS & .env
+------------------------------------------------------
+The script requires an active .env file to pull YouTube Data and AI summaries.
+1. Copy `sample.env` to a new file named `.env`
+2. Open `.env` and fill in:
+   - YOUTUBE_API_KEY (from Google Cloud Console)
+   - OPENROUTER_API_KEY (from OpenRouter.ai)
+3. Save the `.env` file.
+
+3. BYPASSING "403 FORBIDDEN" ERRORS (CRITICAL)
+------------------------------------------------------
+YouTube heavily restricts video downloads with DRM (PO Tokens). If you see 
+"HTTP Error 403: Forbidden" in the console, you MUST provide a cookies file:
+1. Install the "Get cookies.txt LOCALLY" extension in Chrome or Edge.
+2. Go to youtube.com and ensure you are logged into an account.
+3. Click the extension icon and click "Export".
+4. Move the downloaded `cookies.txt` file into this `SupaFAN` folder, directly 
+   next to `main.py`.
+5. The script will automatically detect `cookies.txt` and bypass the 403 block!
+
+4. HOW TO RUN THE SCRIPT
+------------------------------------------------------
+The pipeline is entirely CLI-based. You can download videos, fetch comments, 
+extract metadata, and generate AI insights in one go.
+
+Basic Usage:
+  python main.py
+
+Advanced Commands:
+  # Scan a specific channel's latest uploads (e.g., Mark Rober)
+  python main.py -t @MarkRober
+
+  # Scan a channel and automatically attempt to download the MP4 videos
+  python main.py -t @MarkRober -d
+
+  # Download the maximum amount of videos from a channel (bypassing the 5 limit)
+  python main.py -t @MarkRober -d --scan-all
+
+  # Extract detailed metadata (comments, metrics, transcripts) without downloading the MP4
+  python main.py -t @MarkRober
+
+5. VIEWING DOWNLOADED VIDEOS (VS Code Audio Bug)
+------------------------------------------------------
+All downloads are saved in the `downloads/` folder.
+* NOTE: If you play `.mp4` videos directly inside the VS Code editor, there will 
+  be NO SOUND! This is a known VS Code limitation with AAC audio codecs.
+* FIX: Right-click the `.mp4` file -> "Reveal in File Explorer", then double-click 
+  the video to play it in VLC, Windows Media Player, or your browser.
+
+6. OUTPUTS
+------------------------------------------------------
+For every video processed, the script generates a detailed file in `output/`:
+- Contains: Title, tags, view counts, upload dates, top comments, and an 
+  AI-generated OSINT summary based on the metadata and comments!
