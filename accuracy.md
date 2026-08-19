@@ -1,4 +1,4 @@
-# SupaFAN v2.0
+# SupaFAN v1.0 (i am working on  v1.1)
 
 ## Channel Analysis Accuracy Evaluation
 
