@@ -179,7 +179,8 @@ The evaluation represents a **manual report-level accuracy assessment**, rather 
 ---
 
 ## 📝 License
-
+MIT
+---
 Made With 💖 By **DAPOWER99**.
 ---
 
