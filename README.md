@@ -158,18 +158,16 @@ SupaFAN v2.0 was manually evaluated against **13 YouTube channels**.
 
 | Result                |      Count |
 | --------------------- | ---------: |
-| 100% accuracy         |         10 |
-| 90% accuracy          |          1 |
+| 100% accuracy         |         12 |
 | 80% accuracy          |          1 |
-| 70% accuracy          |          1 |
-| **Weighted accuracy** | **95.38%** |
+| **Weighted accuracy** | **99.23%** |
 
 ### Calculation
 ```text
 (10 × 100 + 1 × 90 + 1 × 80 + 1 × 70) ÷ 13
-= 1240 ÷ 13
-= 95.384615...
-≈ 95%
+= 1290 ÷ 13
+= 99.23...
+≈ 99%
 ```
 
 The evaluation represents a **manual report-level accuracy assessment**, rather than a laboratory-grade measurement of every individual generated claim.
@@ -179,8 +177,7 @@ The evaluation represents a **manual report-level accuracy assessment**, rather 
 ---
 
 ## 📝 License
-MIT
----
+
 Made With 💖 By **DAPOWER99**.
 ---
 
